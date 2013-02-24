@@ -1,0 +1,39 @@
+# -*- mode: snippet -*-
+# name: api_tests
+# key: api-tests
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+def test_GET_${1:resource}s(self):
+    ${1:$(downcase text)} = $1F()
+    uri = reverse('${1:$(downcase text)}s-resource')
+    res = self.client.get(uri)
+    content = json.loads(res.content)
+    self.assertEqual(res.status_code, 200)
+
+def test_POST_$1(self):
+    uri = reverse('${1:$(downcase text)}s-resource')
+    data = {}
+    res = self.client.post(uri, data)
+    content = json.loads(res.content)
+    self.assertEqual(res.status_code, 201)
+
+def test_GET_$1(self):
+    ${1:$(downcase text)} = $1F()
+    uri = reverse('${1:$(downcase text)}-resource', kwargs={'${2:id}': ${1:$(downcase text)}.$2})
+    res = self.client.get(uri)
+    content = json.loads(res.content)
+    self.assertEqual(res.status_code, 200)
+
+def test_PUT_$1(self):
+    ${1:$(downcase text)} = $1F()
+    uri = reverse('${1:$(downcase text)}-resource', kwargs={'$2': ${1:$(downcase text)}.$2})
+    data = {}
+    res = self.client.put(uri, data)
+    content = json.loads(res.content)
+    self.assertEqual(res.status_code, 200)
+
+def test_DELETE_$1(self):
+    ${1:$(downcase text)} = $1F()
+    uri = reverse('${1:$(downcase text)}-resource', kwargs={'$2': ${1:$(downcase text)}.$2})
+    res = self.client.delete(uri)
+    self.assertEqual(res.status_code, 204)

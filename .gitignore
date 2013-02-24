@@ -1,0 +1,18 @@
+*.elc
+
+# Emacs
+*\#
+.\#*
+*~
+/.ido.last
+/.smex-items
+/ac-comphist.dat
+/places
+/el-get
+/elpa
+/eshell
+/url/cookies
+/tramp
+/desktops
+
+.DS_Store
