@@ -1,8 +1,12 @@
-(setq inhibit-splash-screen t)          ; no splash screen, thanks
+;; No splash screen, thanks
+(setq inhibit-splash-screen t)
 
-;; files settings
-(setq make-backup-files nil)            ; no backup files
-(setq require-final-newline 'query)     ; text file end up with a new line
+;; Files settings
+;; No backup files
+(setq make-backup-files nil)
+
+;; Text file end up with a new line
+;(setq require-final-newline 'query)     
 
 ;; Use the clipboard, pretty please, so that copy/paste "works"
 (setq x-select-enable-clipboard t)
@@ -11,7 +15,7 @@
 (windmove-default-keybindings 'meta)
 (setq windmove-wrap-around t)
 
-;; whenever an external process changes a file underneath emacs, and there
+;; Whenever an external process changes a file underneath emacs, and there
 ;; was no unsaved changes in the corresponding buffer, just revert its
 ;; content to reflect what's on-disk.
 (global-auto-revert-mode 1)
@@ -29,7 +33,7 @@
 ;; Answering just 'y' or 'n' will do
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-;; ignore bell
+;; Ignore bell
 (setq ring-bell-function 'ignore)
 
 ;; UTF-8 please
@@ -64,7 +68,7 @@
 (setq ediff-split-window-function 'split-window-horizontally)
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
-;; use ido for minibuffer completion
+;; Use ido for minibuffer completion
 (require 'ido)
 (ido-mode 'both) ;; for buffers and files
 (setq
@@ -83,9 +87,9 @@
   ido-max-prospects 12             ; don't spam my minibuffer
   ido-confirm-unique-completion t) ; wait for RET, even with unique completion
 
-;; default key to switch buffer is C-x b, but that's not easy enough
+;; Default key to switch buffer is C-x b, but that's not easy enough.
 ;;
-;; when you do that, to kill emacs either close its frame from the window
+;; When you do that, to kill emacs either close its frame from the window
 ;; manager or do M-x kill-emacs.  Don't need a nice shortcut for a once a
 ;; week (or day) action.
 (global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
@@ -101,13 +105,13 @@
 (set-default 'tramp-default-proxies-alist
              (quote ((".*" "\\`root\\'" "/ssh:%h:"))))
 
-;; desktops folder in .emacs.d
+;; Desktops folder in .emacs.d
 (setq desktop-dirname "~/.emacs.d/desktops/")
 (setq desktop-path '("~/.emacs.d/desktops/"))
 (unless (file-directory-p desktop-dirname)
   (make-directory desktop-dirname t))
 
-;; only display trailing white space
+;; Only display trailing white space
 (setq whitespace-style '(face tabs empty trailing lines-tail))
 
 (defadvice find-file (before make-directory-maybe (filename &optional wildcards) activate)
@@ -117,7 +121,10 @@
       (unless (file-exists-p dir)
         (make-directory dir)))))
 
-;; enable cookies in w3m
+;; Sentences do not need double spaces to end
+(set-default 'sentence-end-double-space nil)
+
+;; Enable cookies in w3m
 (setq w3m-use-cookies t)
 
 (provide 'defaults)

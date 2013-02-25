@@ -1,11 +1,4 @@
-# Emacs Kicker
-
-This repository is an emacs settings heavily relying on the new Emacs 24
-features and the [el-get](https://github.com/dimitri/el-get) alternative
-package manager.
-
-[Emacs Rocks](http://emacsrocks.com) and @magnars were also a great source of
-inspiration.
+# Personal Emacs Configuration
 
 ## Install
 
@@ -22,7 +15,7 @@ you organize all the specific customization of these packages in the
 file. For more information, consult [el-get](https://github.com/dimitri/el-get)
 documentation.
 
-Other customization are organized as follow:
+Other non-custom-mode specific customization are organized as follow:
 
 - `defaults.el` for classical general customization
 - `visual.el` for everything related to frames and visual buffer interaction
@@ -100,3 +93,14 @@ symbols representing those modes.
 * α    auto-complete
 * φ    paredit
 * π    Python mode
+
+# Inspirational dotemacs
+
+This repository is an emacs settings heavily relying on the new Emacs 24
+features and the [el-get](https://github.com/dimitri/el-get) alternative
+package manager.
+
+Other indirect contributors include:
+
+* [Emacs Rocks](http://emacsrocks.com) from @magnars
+* [Emacs Prelude](http://batsov.com/prelude/) from @bbatsov

@@ -19,7 +19,9 @@
 
 ;; Misc
 (require 'misc)
-(when is-mac (require 'mac))            ; setup some mac specific config
+
+;; setup some mac specific config
+(when is-mac (require 'mac))
 
 ;; emacs-server
 (require 'server)
