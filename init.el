@@ -46,11 +46,11 @@
 ;; el-get packages
 (setq
  my:el-get-packages
- '(el-get				; el-get is self-hosting
+ '(el-get                               ; el-get is self-hosting
    package                              ; ELPA, MELPA etc.
    dash                                 ; A modern list api
    mark-multiple                        ; mark several regions at once
-   escreen            			; screen for emacs, C-\ C-h
+   escreen                              ; screen for emacs, C-\ C-h
    buffer-move                          ; move quickly bettween buffers
    multiple-cursors                     ; multiple cursors
    smooth-scrolling                     ; smooth scorlling
@@ -63,9 +63,9 @@
    monky                                ; magit for hg
    jade-mode                            ; jade templates
    coffee-mode                          ; CoffeeScript
-   switch-window			; takes over C-x o
-   auto-complete			; complete as you type with overlays
-   zencoding-mode			; emacs-wiki encoding
+   switch-window                        ; takes over C-x o
+   auto-complete                        ; complete as you type with overlays
+   zencoding-mode                       ; emacs-wiki encoding
    virtualenv                           ; virtualenv for python shell
    yasnippet                            ; snippets
    pymacs                               ; pymacs (requires python packages)
@@ -75,9 +75,9 @@
    goto-last-change                     ; explicit enough
    markdown-mode                        ; markdown major mode
    asciidoc                             ; asciidoc helpers
-   color-theme		                ; nice looking emacs
+   color-theme                          ; nice looking emacs
    color-theme-solarized                ; solarized from ethan shoonover
-   color-theme-tango	                ; looks like grey dark solarized
+   color-theme-tango                    ; looks like grey dark solarized
    color-theme-sanityinc                ; like solarized with more contrast
    minimap                              ; a minimap sidebar for emacs
    js2-mode                             ; improved javascript mode
@@ -87,6 +87,7 @@
    find-file-in-project                 ; .git defined project C-x o
    browse-kill-ring                     ; browse kill ring C-x C-y
    ein                                  ; ipython notebooks for emacs
+   helm                                 ; completion and selection narrowing
 ;;   slime                                ; Superior Lisp Interaction Mode
 ;;   swank-js                             ; interaction between js and emacs
 ;;   gh                                   ; github API
