@@ -69,6 +69,7 @@
    virtualenv                           ; virtualenv for python shell
    yasnippet                            ; snippets
    pymacs                               ; pymacs (requires python packages)
+   python-pep8                          ; Python pep8 checker
    ropemacs                             ; requires mercurial to be installed
    auto-complete                        ; auto completion for all
    smex                                 ; a better (ido like) M-x
