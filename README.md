@@ -61,6 +61,7 @@ The developing environment is optimized for Python, Javascript, HTML, CSS.
 * `M-_    ` Redo
 * `C-x u  ` Show the undo-tree
 * `C-x g  ` Open magit. It's a magical git interface for emacs
+* `C-x C-h` Open helm-mini
 
 ### Navigation
 
@@ -79,6 +80,7 @@ The developing environment is optimized for Python, Javascript, HTML, CSS.
 * `C-x 2  ` Split window horizontally
 * `C-x 3  ` Split window vertically
 * `S-arrow` Jump to window to the left/right/up/down
+* `M-arrow` Jump to window to the left/right/up/down
 
 ### Mode Line
 
