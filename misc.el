@@ -25,15 +25,6 @@
 (autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t)
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
-;; setting for auto-close brackets for electric-pair-mode regardless of current
-;; major mode syntax table
-(setq electric-pair-pairs '(
-                            (?\" . ?\")
-                            (?\{ . ?\})
-                            ) )
-;; auto-close any kind of brackets
-(add-hook 'after-change-major-mode-hook 'electric-pair-mode)
-
 (defun bf-pretty-print-xml-region (begin end)
   "Pretty format XML markup in region. You need to have nxml-mode
 http://www.emacswiki.org/cgi-bin/wiki/NxmlMode installed to do
