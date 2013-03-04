@@ -84,11 +84,11 @@
    js2-mode                             ; improved javascript mode
    js2-refactor                         ; javascript refactor
    scala-mode                           ; scala
-   css-mode                             ; nicer css
    find-file-in-project                 ; .git defined project C-x o
    browse-kill-ring                     ; browse kill ring C-x C-y
    ein                                  ; ipython notebooks for emacs
    helm                                 ; completion and selection narrowing
+   less-css-mode                        ; to edit less css files (lesscss.org)
 ;;   slime                                ; Superior Lisp Interaction Mode
 ;;   swank-js                             ; interaction between js and emacs
 ;;   gh                                   ; github API
