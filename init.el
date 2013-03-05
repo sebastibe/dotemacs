@@ -89,6 +89,7 @@
    ein                                  ; ipython notebooks for emacs
    helm                                 ; completion and selection narrowing
    less-css-mode                        ; to edit less css files (lesscss.org)
+   yaml-mode                            ; major mode to edit YAML file
 ;;   slime                                ; Superior Lisp Interaction Mode
 ;;   swank-js                             ; interaction between js and emacs
 ;;   gh                                   ; github API
