@@ -34,7 +34,7 @@ The developing environment is optimized for Python, Javascript, HTML, CSS.
 
 ### Files
 
-* `C-x C-f` Open a file. Starts in the current directory
+* `C-x C-f` Open a file. Starts in the current directory. You can use `C-SPC` or `C-@` to save your current set of match and plug in more criteria.
 * `C-x f  ` Open a recently visited file
 * `C-x o  ` Open a file in the current project (based on .git ++)
 * `C-x C-s` Save this file
