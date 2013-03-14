@@ -60,6 +60,7 @@
    undo-tree                            ; undo-history as a tree C-x u
    revive                               ; revive saved states of emacs
    magit                                ; magic git mode
+   magithub                             ; magit enhancement for github
    monky                                ; magit for hg
    jade-mode                            ; jade templates
    coffee-mode                          ; CoffeeScript
