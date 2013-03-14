@@ -16,3 +16,6 @@
 /desktops
 
 .DS_Store
+.projectile
+projectile-bookmarks.eld
+projectile.cache
