@@ -58,6 +58,7 @@
    ace-jump-mode                        ; jump around in your file
    fit-frame                            ; fit frame to text and center
    undo-tree                            ; undo-history as a tree C-x u
+   goto-last-change                     ; move cursor to the last change
    revive                               ; revive saved states of emacs
    magit                                ; magic git mode
    magithub                             ; magit enhancement for github
@@ -92,7 +93,7 @@
    less-css-mode                        ; to edit less css files (lesscss.org)
    yaml-mode                            ; major mode to edit YAML file
    projectile                           ; project management integration
-;;   slime                                ; Superior Lisp Interaction Mode
+   slime                                ; Superior Lisp Interaction Mode
 ;;   swank-js                             ; interaction between js and emacs
 ;;   gh                                   ; github API
 ;;  gist                                  ; github gists
