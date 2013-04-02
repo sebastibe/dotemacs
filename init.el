@@ -94,6 +94,8 @@
    yaml-mode                            ; major mode to edit YAML file
    projectile                           ; project management integration
    slime                                ; Superior Lisp Interaction Mode
+   w3m                                  ; unix text based HTML browser
+   htmlr                                ; HTML renderer
 ;;   swank-js                             ; interaction between js and emacs
 ;;   gh                                   ; github API
 ;;  gist                                  ; github gists
