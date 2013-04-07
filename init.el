@@ -94,8 +94,9 @@
    yaml-mode                            ; major mode to edit YAML file
    projectile                           ; project management integration
    slime                                ; Superior Lisp Interaction Mode
-   w3m                                  ; unix text based HTML browser
    htmlr                                ; HTML renderer
+   multi-term                           ; shell and term in one
+   shell-pop                            ; one key go to shell
 ;;   swank-js                             ; interaction between js and emacs
 ;;   gh                                   ; github API
 ;;  gist                                  ; github gists
@@ -115,3 +116,16 @@
                 (require 'setup-slime-js))))
 
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(newsticker-url-list (quote (("David Larlet's blog" "https://larlet.fr/david/log/" nil nil nil))))
+ '(virtualenv-root "~/Dev/"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

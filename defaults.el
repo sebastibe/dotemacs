@@ -124,7 +124,14 @@
 ;; Sentences do not need double spaces to end
 (set-default 'sentence-end-double-space nil)
 
+;; Set shell
+(setq shell-file-name "/bin/zsh")
+
 ;; Enable cookies in w3m
 (setq w3m-use-cookies t)
+
+;; Use Emacs terminfo, not system terminfo
+(setq system-uses-terminfo nil)
+;; For Cocoa Emacs or emacs-mac: tic -o ~/.terminfo $EMACS/etc/e/eterm-color.ti
 
 (provide 'defaults)

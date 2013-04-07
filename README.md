@@ -82,6 +82,13 @@ The developing environment is optimized for Python, Javascript, HTML, CSS.
 * `S-arrow` Jump to window to the left/right/up/down
 * `M-arrow` Jump to window to the left/right/up/down
 
+### Terminal
+
+* `C-c t ` Call a terminal session or join existing one
+* `C-c n ` Jump to next terminal
+* `C-c p ` Jump to previous terminal
+* `F8    ` Open a terminal on the bottom of the buffer
+
 ### Mode Line
 
 Instead of a long list of Major and Minor modes that are active, I have greek
