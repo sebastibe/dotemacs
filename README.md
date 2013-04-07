@@ -81,6 +81,7 @@ The developing environment is optimized for Python, Javascript, HTML, CSS.
 * `C-x 3  ` Split window vertically
 * `S-arrow` Jump to window to the left/right/up/down
 * `M-arrow` Jump to window to the left/right/up/down
+* `C-c b  ` Create a scratch buffer to play inside 
 
 ### Terminal
 
@@ -89,19 +90,29 @@ The developing environment is optimized for Python, Javascript, HTML, CSS.
 * `C-c p ` Jump to previous terminal
 * `F8    ` Open a terminal on the bottom of the buffer
 
+### Project management
+
+* `C-x C-h` helm-mini
+* `C-c h  ` helm-mini projectile
+
 ### Mode Line
 
-Instead of a long list of Major and Minor modes that are active, I have greek
-symbols representing those modes.
+Instead of a long list of Major and Minor modes that are active, we use greek
+and russian symbols representing those modes. Capital letters are used for
+major modes.
 
-* λ    Clojure mode
+* Λ    Clojure mode
 * τ    undo-tree
 * γ    yas
 * υ    volatile highlights
-* ηζ  nREPL minor mode
+* ηζ   nREPL minor mode
 * α    auto-complete
 * φ    paredit
-* π    Python mode
+* Π    Python mode
+* п    Projectile mode
+* Мд   Markdown mode
+* ел   emacs lisp mode
+* р    ropemacs mode
 
 # Inspirational dotemacs
 
