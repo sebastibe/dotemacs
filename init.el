@@ -49,6 +49,7 @@
  '(el-get                               ; el-get is self-hosting
    package                              ; ELPA, MELPA etc.
    dash                                 ; A modern list api
+   cl-lib                               ; forward compatibility package
    mark-multiple                        ; mark several regions at once
    escreen                              ; screen for emacs, C-\ C-h
    buffer-move                          ; move quickly bettween buffers
