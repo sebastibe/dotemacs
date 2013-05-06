@@ -132,6 +132,7 @@ by using nxml's indentation rules."
     (emacs-lisp-mode . "ЕЛ")
     (lisp-interaction-mode . "Ли")
     (markdown-mode . "Мд"))
+    (coffee-mode . "Коф"))
   "Alist for `clean-mode-line'.
 
 When you add a new element to the alist, keep in mind that you

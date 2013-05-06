@@ -15,6 +15,9 @@ you organize all the specific customization of these packages in the
 file. For more information, consult [el-get](https://github.com/dimitri/el-get)
 documentation.
 
+To retrieve the list of ELPA packages as local el-get recipes, use the
+`el-get-elpa-build-local-recipes` command.
+
 Other non-custom-mode specific customization are organized as follow:
 
 - `defaults.el` for classical general customization
@@ -113,6 +116,7 @@ major modes.
 * Мд   Markdown mode
 * ел   emacs lisp mode
 * р    ropemacs mode
+* Коф  coffee-mode
 
 # Inspirational dotemacs
 
