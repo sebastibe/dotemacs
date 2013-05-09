@@ -125,14 +125,17 @@ by using nxml's indentation rules."
     (nrepl-interaction-mode . " ηζ")
     (projectile-mode . " п")
     (ropemacs-mode . " р")
+    (rainbow-mode . " ιρις")
     ;; Major modes
     (clojure-mode . "Λ")
     (hi-lock-mode . "")
     (python-mode . "Π")
     (emacs-lisp-mode . "ЕЛ")
     (lisp-interaction-mode . "Ли")
-    (markdown-mode . "Мд"))
-    (coffee-mode . "Коф"))
+    (markdown-mode . "Мд")
+    (coffee-mode . "Коф")
+    (less-css-mode . "Лес"))
+
   "Alist for `clean-mode-line'.
 
 When you add a new element to the alist, keep in mind that you

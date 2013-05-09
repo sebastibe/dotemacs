@@ -111,12 +111,14 @@ major modes.
 * ηζ   nREPL minor mode
 * α    auto-complete
 * φ    paredit
+* ιρις  rainbow mode
 * Π    Python mode
 * п    Projectile mode
 * Мд   Markdown mode
 * ел   emacs lisp mode
 * р    ropemacs mode
 * Коф  coffee-mode
+* Лес  less-css mode
 
 # Inspirational dotemacs
 

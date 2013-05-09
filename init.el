@@ -98,6 +98,7 @@
    htmlr                                ; HTML renderer
    multi-term                           ; shell and term in one
    shell-pop                            ; one key go to shell
+   rainbow-mode                         ; show color strings with a background color
 ;;   swank-js                             ; interaction between js and emacs
 ;;   gh                                   ; github API
 ;;  gist                                  ; github gists
@@ -122,6 +123,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("88d556f828e4ec17ac074077ef9dcaa36a59dccbaa6f2de553d6528b4df79cbd" default)))
  '(newsticker-url-list (quote (("David Larlet's blog" "https://larlet.fr/david/log/" nil nil nil))))
  '(virtualenv-root "~/Dev/"))
 (custom-set-faces
