@@ -96,9 +96,6 @@
 (global-set-key (kbd "C-x C-c") 'ido-switch-buffer)
 (global-set-key (kbd "C-x B") 'ibuffer)
 
-;; C-x C-j opens dired with the cursor right on the file you're editing
-(require 'dired-x)
-
 (require 'tramp)
 (setq tramp-default-method "ssh")
 ;; C-x C-f /sudo:root@host[#port]:/path/to/file to log as sudo

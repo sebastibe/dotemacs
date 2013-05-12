@@ -102,7 +102,8 @@
    multi-term                           ; shell and term in one
    shell-pop                            ; one key go to shell
    rainbow-mode                         ; show color strings with a background color
-;;   swank-js                             ; interaction between js and emacs
+   swank-js                             ; interaction between js and emacs
+   dired+                               ; some more hooks fore dired
 ;;   gh                                   ; github API
 ;;  gist                                  ; github gists
    ))
