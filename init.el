@@ -104,6 +104,7 @@
    rainbow-mode                         ; show color strings with a background color
    swank-js                             ; interaction between js and emacs
    dired+                               ; some more hooks fore dired
+   powerline                            ; Vim powerline for emacs 
 ;;   gh                                   ; github API
 ;;  gist                                  ; github gists
    ))
