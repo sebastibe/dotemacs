@@ -54,12 +54,14 @@
    dash                                 ; A modern list api
    cl-lib                               ; forward compatibility package
    mark-multiple                        ; mark several regions at once
+   expand-region
    escreen                              ; screen for emacs, C-\ C-h
    buffer-move                          ; move quickly bettween buffers
    multiple-cursors                     ; multiple cursors
    smooth-scrolling                     ; smooth scorlling
    fill-column-indicator                ; draw a line at 80 char
    ace-jump-mode                        ; jump around in your file
+   key-chord                            ; handle 2 keys pressed simultaneously
    fit-frame                            ; fit frame to text and center
    undo-tree                            ; undo-history as a tree C-x u
    goto-last-change                     ; move cursor to the last change
