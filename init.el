@@ -80,6 +80,7 @@
    python-pep8                          ; Python pep8 checker
    ropemacs                             ; requires mercurial to be installed
    auto-complete                        ; auto completion for all
+   elpy                                 ; better Python development environment
    smex                                 ; a better (ido like) M-x
    goto-last-change                     ; explicit enough
    markdown-mode                        ; markdown major mode

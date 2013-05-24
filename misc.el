@@ -126,6 +126,8 @@ by using nxml's indentation rules."
     (projectile-mode . " п")
     (ropemacs-mode . " р")
     (rainbow-mode . " ιρις")
+    (flymake-mode . " ικαρ")
+    (elpy-mode . " επ")
     ;; Major modes
     (clojure-mode . "Λ")
     (hi-lock-mode . "")
