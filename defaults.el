@@ -1,4 +1,5 @@
-;; No splash screen, thanks
+;; Initialization successful, welcome to GNU Emacs 24.3.1.
+
 (setq inhibit-splash-screen t)
 
 ;; Files settings
@@ -103,10 +104,23 @@
              (quote ((".*" "\\`root\\'" "/ssh:%h:"))))
 
 ;; Desktops folder in .emacs.d
+(require 'desktop)
+
 (setq desktop-dirname "~/.emacs.d/desktops/")
 (setq desktop-path '("~/.emacs.d/desktops/"))
 (unless (file-directory-p desktop-dirname)
   (make-directory desktop-dirname t))
+
+;; Specify buffers not to save
+(setq desktop-buffers-not-to-save
+      (concat "\\("
+              "^nn\\.a[0-9]+\\|\\.log\\|(ftp)\\|^tags\\|^TAGS"
+              "\\|\\.emacs.*\\|\\.diary\\|\\.newsrc-dribble\\|\\.bbdb"
+              "\\)$"))
+(add-to-list 'desktop-modes-not-to-save 'dired-mode)
+(add-to-list 'desktop-modes-not-to-save 'Info-mode)
+(add-to-list 'desktop-modes-not-to-save 'info-lookup-mode)
+(add-to-list 'desktop-modes-not-to-save 'fundamental-mode)
 
 ;; Only display trailing white space
 (setq whitespace-style '(face tabs empty trailing lines-tail))
