@@ -4,3 +4,5 @@
             (local-unset-key (kbd "M-<left>"))
             (local-unset-key (kbd "M-<right>"))
             ))
+
+(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
