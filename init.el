@@ -53,69 +53,60 @@
    package                              ; ELPA, MELPA etc.
    dash                                 ; A modern list api
    cl-lib                               ; forward compatibility package
-   mark-multiple                        ; mark several regions at once
-   expand-region
    escreen                              ; screen for emacs, C-\ C-h
-   buffer-move                          ; move quickly bettween buffers
-   multiple-cursors                     ; multiple cursors
-   smooth-scrolling                     ; smooth scorlling
-   fill-column-indicator                ; draw a line at 80 char
-   ace-jump-mode                        ; jump around in your file
    key-chord                            ; handle 2 keys pressed simultaneously
    fit-frame                            ; fit frame to text and center
    undo-tree                            ; undo-history as a tree C-x u
    goto-last-change                     ; move cursor to the last change
+   rainbow-delimiters
    revive                               ; revive saved states of emacs
    magit                                ; magic git mode
-   magithub                             ; magit enhancement for github
    monky                                ; magit for hg
    jade-mode                            ; jade templates
-   coffee-mode                          ; CoffeeScript
-   switch-window                        ; takes over C-x o
    auto-complete                        ; complete as you type with overlays
-   zencoding-mode                       ; emacs-wiki encoding
-   virtualenv                           ; virtualenv for python shell
+   zencoding-mode
    yasnippet                            ; snippets
-   pymacs                               ; pymacs (requires python packages)
-   python-pep8                          ; Python pep8 checker
-   ropemacs                             ; requires mercurial to be installed
-   auto-complete                        ; auto completion for all
-   elpy                                 ; better Python development environment
    smex                                 ; a better (ido like) M-x
-   goto-last-change                     ; explicit enough
-   markdown-mode                        ; markdown major mode
    asciidoc                             ; asciidoc helpers
    color-theme                          ; nice looking emacs
    color-theme-solarized                ; solarized from ethan shoonover
    color-theme-tango                    ; looks like grey dark solarized
    color-theme-sanityinc                ; like solarized with more contrast
-   minimap                              ; a minimap sidebar for emacs
-   js2-mode                             ; improved javascript mode
-   js2-refactor                         ; javascript refactor
-   scala-mode                           ; scala
-   find-file-in-project                 ; .git defined project C-x o
-   browse-kill-ring                     ; browse kill ring C-x C-y
-   ein                                  ; ipython notebooks for emacs
+   sublime-themes                       ; moar cool themes
    helm                                 ; completion and selection narrowing
-   less-css-mode                        ; to edit less css files (lesscss.org)
    yaml-mode                            ; major mode to edit YAML file
    projectile                           ; project management integration
    slime                                ; Superior Lisp Interaction Mode
    htmlr                                ; HTML renderer
    multi-term                           ; shell and term in one
    shell-pop                            ; one key go to shell
-   rainbow-mode                         ; show color strings with a background color
-   swank-js                             ; interaction between js and emacs
-   dired+                               ; some more hooks fore dired
-   powerline                            ; Vim powerline for emacs 
-;;   gh                                   ; github API
+   powerline                            ; Vim powerline for emacs
+   calfw                                ; Calendar framework
+   json-mode                            ; Beautiful json
+;   mu4e
+   exec-path-from-shell
+   quickrun                              ; execute editing buffer
+   auto-insert-choose
+   pkg-info
+   epl
+;;   Gh                                   ; github API
 ;;  gist                                  ; github gists
+   dash-at-point
    ))
 
 (el-get 'sync my:el-get-packages)
 
+;; Preamble
+(require 'preamble-core)
+(require 'preamble-global-keybindings)
+(require 'preamble-editor)
+
 ;; key bindings settings
 (require 'key-bindings)
+
+;; the modules
+(when (file-exists-p preamble-modules-file)
+  (load preamble-modules-file))
 
 ;; selected default color theme
 (color-theme-sanityinc-dark)
