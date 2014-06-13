@@ -11,9 +11,13 @@
 (set-face-attribute 'default nil :font "Monaco-13")
 
 ;; make sure path is correct when launched as application
-(setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:" (getenv "PATH")))
-(push "/usr/local/bin" exec-path)
-(push "/usr/local/share/npm/bin" exec-path)
+;; (setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:" (getenv "PATH")))
+;; (push "/usr/local/bin" exec-path)
+;; (push "/usr/local/share/npm/bin" exec-path)
+;; (setenv "PATH" (concat (getenv "PATH") ":/usr/local/share/npm/bin"))
+;; (setq exec-path (append exec-path '("/usr/local/share/npm/bin")))
+(setq exec-path (append exec-path '("/Users/seb/go/bin")))
+
 
 ;; keybinding to toggle full screen mode
 (global-set-key (quote [M-f10]) (quote ns-toggle-fullscreen))
@@ -27,6 +31,9 @@
 
 ;; Don't open files from the workspace in a new frame
 (setq ns-pop-up-frames nil)
+
+;; Old fashion fullscreen for multi-displays
+(setq ns-use-native-fullscreen nil)
 
 ;; Use aspell for spell checking: brew install aspell --lang=en
 (setq ispell-program-name "/usr/local/bin/aspell")

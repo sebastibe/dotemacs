@@ -1,22 +1,32 @@
-# Personal Emacs Configuration
+Preamble
+========
 
-## Install
+**An opinionated Emacs configuration based on [el-get], [Prelude], [Emacs Rocks]
+and some personal flavor**
 
-    ln -s $REPO ~/.emacs.d
+---
 
-The idea is to put your personal files into the .gitignore.
+This configuration is *only* compatible with **GNU Emacs 24.x** (**24.3** recommended).
+
+## Quick Install
+
+Clone the repository and link it to the `.emacs.d` folder.
+
+```bash
+$ ln -s $REPO ~/.emacs.d
+```
 
 ## Concept
 
-The biggest challenge with Emacs configuration is to find a consistent way
-to organize it. El-get offers a easy way to setup external packages and let
-you organize all the specific customization of these packages in the
+The biggest challenge with Emacs configuration is code organization.
+[Prelude] has made a big effort in the *horizontal* direction while
+[el-get] offers an easy way to setup external packages which are usualy
+more *vertical*. Preamble offers a opionated compromise integration between
+both.
+[el-get] organize all the specific customization of each packages in the
 `~/.emacs.d/packages.d/` directory within the corresponding `init-<package>.el`
-file. For more information, consult [el-get](https://github.com/dimitri/el-get)
-documentation.
-
-To retrieve the list of ELPA packages as local el-get recipes, use the
-`el-get-elpa-build-local-recipes` command.
+file.
+[Preamble] mimic [Prelude] in organizing functionalities in modules.
 
 Other non-custom-mode specific customization are organized as follow:
 
@@ -27,7 +37,7 @@ Other non-custom-mode specific customization are organized as follow:
 
 ## What's in there?
 
-The developing environment is optimized for Python, Javascript, HTML, CSS.
+The programming environment is optimized for Python, Javascript, CoffeScript, HTML, CSS.
 
 ## Keybindings
 
@@ -39,7 +49,7 @@ The developing environment is optimized for Python, Javascript, HTML, CSS.
 
 * `C-x C-f` Open a file. Starts in the current directory. You can use `C-SPC` or `C-@` to save your current set of match and plug in more criteria.
 * `C-x f  ` Open a recently visited file
-* `C-x o  ` Open a file in the current project (based on .git ++)
+* `C-x p  ` Open a file in the current project (based on .git ++)
 * `C-x C-s` Save this file
 * `C-x C-w` Save as ...
 * `C-x C-j` Jump to this files current directory
@@ -65,6 +75,7 @@ The developing environment is optimized for Python, Javascript, HTML, CSS.
 * `C-x u  ` Show the undo-tree
 * `C-x g  ` Open magit. It's a magical git interface for emacs
 * `C-x C-h` Open helm-mini
+* `C-;`     Toggle iedit-mode to edit all the occurences of a region
 
 ### Navigation
 
@@ -129,4 +140,4 @@ package manager.
 Other indirect contributors include:
 
 * [Emacs Rocks](http://emacsrocks.com) from @magnars
-* [Emacs Prelude](http://batsov.com/prelude/) from @bbatsov
+* [Prelude](http://batsov.com/prelude/) from @bbatsov

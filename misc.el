@@ -166,13 +166,6 @@ want to use in the modeline *in lieu of* the original.")
 ;;; А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ы Э Ю Я
 ;;; а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ы э ю я
 
-(defun enable-whitespace ()
-  ;; keep the whitespace decent all the time (in this buffer)
-  (add-hook 'before-save-hook 'whitespace-cleanup nil t)
-  (whitespace-mode +1))
-
-(enable-whitespace)
-
 (setq pygrep "grep -nH -r --exclude-dir='svn' --include='*.py' -e SrchStr *")
 
 ;; Time utils
@@ -204,5 +197,21 @@ this date/time in a readable format."
       ;; very big; must be milliseconds
       (setq timestamp (/ timestamp 1000)))
   (message (time-iso-8601 timestamp)))
+
+(defvar user-home-directory (concat (expand-file-name "~") "/"))
+
+(defun shorter-file-name (file-name)
+  (s-chop-prefix user-home-directory file-name))
+
+(defun recentf--file-cons (file-name)
+  (cons (shorter-file-name file-name) file-name))
+
+(defun recentf-ido-find-file ()
+  "Find a recent file using ido."
+  (interactive)
+  (let* ((recent-files (mapcar 'recentf--file-cons recentf-list))
+         (files (mapcar 'car recent-files))
+         (file (completing-read "Choose recent file: " files)))
+    (find-file (cdr (assoc file recent-files)))))
 
 (provide 'misc)

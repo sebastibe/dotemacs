@@ -1,1 +1,1 @@
-(global-set-key (kbd "C-x o") 'find-file-in-project)
+(global-set-key (kbd "C-x p") 'find-file-in-project)

@@ -8,10 +8,10 @@
 (setq ac-auto-start 2)
 
 ;; ropemacs integration
-(ac-ropemacs-initialize)
-(add-hook 'python-mode-hook
-	  (lambda ()
-	    (setq ac-sources (append ac-sources 'ac-source-ropemacs))))
+;; (ac-ropemacs-initialize)
+;; (add-hook 'python-mode-hook
+;;           (lambda ()
+;;             (setq ac-sources (append ac-sources 'ac-source-ropemacs))))
 
 ;; add coffee-mode to auto-complete
 (add-to-list 'ac-modes 'coffee-mode)

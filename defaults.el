@@ -7,7 +7,7 @@
 (setq make-backup-files nil)
 
 ;; Text file end up with a new line
-;(setq require-final-newline 'query)     
+;(setq require-final-newline 'query)
 
 ;; Use the clipboard, pretty please, so that copy/paste "works"
 (setq x-select-enable-clipboard t)
@@ -122,9 +122,6 @@
 (add-to-list 'desktop-modes-not-to-save 'info-lookup-mode)
 (add-to-list 'desktop-modes-not-to-save 'fundamental-mode)
 
-;; Only display trailing white space
-(setq whitespace-style '(face tabs empty trailing lines-tail))
-
 (defadvice find-file (before make-directory-maybe (filename &optional wildcards) activate)
   "Create parent directory if not exists while visiting file."
   (unless (file-exists-p filename)
@@ -137,6 +134,9 @@
 
 ;; Set shell
 (setq shell-file-name "/bin/zsh")
+
+;; Set default directory
+(setq default-directory "~/Dev")
 
 ;; Enable cookies in w3m
 (setq w3m-use-cookies t)

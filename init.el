@@ -2,11 +2,19 @@
 (require 'cl)
 
 ;; Set path to .emacs.d
-(setq dotfiles-dir (file-name-directory
-                    (or (buffer-file-name) load-file-name)))
+(defvar preamble-dir (file-name-directory (or (buffer-file-name) load-file-name))
+  "The root dir of the emacs.d config.")
+(defvar preamble-core-dir (expand-file-name "core" preamble-dir)
+  "The home of Preamble's core functionality.")
+(defvar preamble-modules-dir (expand-file-name  "modules" preamble-dir)
+  "This directory houses all of the built-in Preamble modules.")
+(defvar preamble-modules-file (expand-file-name "preamble-modules.el" preamble-dir)
+  "This files contains a list of modules that will be loaded by Preamble.")
 
 ;; Set up load path
-(add-to-list 'load-path dotfiles-dir)
+(add-to-list 'load-path preamble-dir)
+(add-to-list 'load-path preamble-core-dir)
+(add-to-list 'load-path preamble-modules-dir)
 
 ;; defaults configuration
 (require 'defaults)
@@ -116,18 +124,6 @@
               (when (locate-library "slime-js")
                 (require 'setup-slime-js))))
 
+(guru-global-mode 1)
+
 ;;; init.el ends here
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("88d556f828e4ec17ac074077ef9dcaa36a59dccbaa6f2de553d6528b4df79cbd" default)))
- '(newsticker-url-list (quote (("David Larlet's blog" "https://larlet.fr/david/log/" nil nil nil))))
- '(virtualenv-root "~/Dev/"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

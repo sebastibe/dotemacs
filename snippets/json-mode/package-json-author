@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: author (package.json)
+# key: aut
+# condition: (and buffer-file-name (string= (file-name-nondirectory buffer-file-name) "package.json"))
+# --
+"author": "${1:name} <${2:email}>", 
+$0
