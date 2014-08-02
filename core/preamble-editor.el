@@ -7,7 +7,6 @@
  my:el-get-editor
  '(mark-multiple                        ; mark several regions at once
    expand-region                        ; increase selection by semantic units
-   buffer-move                          ; move quickly bettween buffers
    multiple-cursors                     ; multiple cursors
    smooth-scrolling                     ; smooth scorlling
    fill-column-indicator                ; draw a line at 80 char
@@ -18,6 +17,8 @@
    find-file-in-project                 ; .git defined project C-x o
    browse-kill-ring                     ; browse kill ring C-x C-y
    dired+                               ; some more hooks fore dired
+   auto-complete                        ; complete as you type with overlays
+   yasnippet                            ; snippets
 ))
 
 (el-get 'sync my:el-get-editor)

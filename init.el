@@ -71,9 +71,7 @@
    magit                                ; magic git mode
    monky                                ; magit for hg
    jade-mode                            ; jade templates
-   auto-complete                        ; complete as you type with overlays
    zencoding-mode
-   yasnippet                            ; snippets
    smex                                 ; a better (ido like) M-x
    asciidoc                             ; asciidoc helpers
    color-theme                          ; nice looking emacs
@@ -125,5 +123,7 @@
                 (require 'setup-slime-js))))
 
 (guru-global-mode 1)
+
+(setq backup-directory-alist `(("." . "~/.saves")))
 
 ;;; init.el ends here
