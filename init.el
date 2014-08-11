@@ -69,6 +69,7 @@
    rainbow-delimiters
    revive                               ; revive saved states of emacs
    magit                                ; magic git mode
+   magit-gitflow                        ; magit with gitlfow
    monky                                ; magit for hg
    jade-mode                            ; jade templates
    zencoding-mode
