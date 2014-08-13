@@ -71,6 +71,7 @@
    magit                                ; magic git mode
    magit-gitflow                        ; magit with gitlfow
    monky                                ; magit for hg
+   flycheck                             ; syntax checkers
    jade-mode                            ; jade templates
    zencoding-mode
    smex                                 ; a better (ido like) M-x
