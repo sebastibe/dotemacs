@@ -19,6 +19,7 @@
    dired+                               ; some more hooks fore dired
    auto-complete                        ; complete as you type with overlays
    yasnippet                            ; snippets
+   string-inflection                    ; camelCase <-> camel_case
 ))
 
 (el-get 'sync my:el-get-editor)
