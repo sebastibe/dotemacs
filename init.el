@@ -74,6 +74,7 @@
    flycheck                             ; syntax checkers
    jade-mode                            ; jade templates
    zencoding-mode
+   flx-ido                              ; faster ido
    smex                                 ; a better (ido like) M-x
    asciidoc                             ; asciidoc helpers
    color-theme                          ; nice looking emacs
