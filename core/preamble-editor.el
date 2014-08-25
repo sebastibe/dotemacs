@@ -25,7 +25,7 @@
 (el-get 'sync my:el-get-editor)
 
 ;; Only display trailing white space
-(setq whitespace-style '(face tabs empty trailing lines-tail))
+(setq whitespace-style '(face tabs empty trailing lines-tail indentation::space))
 
 (defun preamble-enable-whitespace ()
   "Enable `whitespace-mode' if `preamble-whitespace' is not nil."
