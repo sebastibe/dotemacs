@@ -70,6 +70,7 @@
    revive                               ; revive saved states of emacs
    magit                                ; magic git mode
    magit-gitflow                        ; magit with gitlfow
+   git-messenger                        ; pop git message at line
    monky                                ; magit for hg
    flycheck                             ; syntax checkers
    jade-mode                            ; jade templates
